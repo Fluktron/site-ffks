@@ -14,14 +14,18 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-mesh-vpn \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-contact-info \
+	gluon-config-mode-core \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-luci-admin \
 	gluon-luci-autoupdater \
 	gluon-luci-portconfig \
+	gluon-luci-wifi-config \
+	gluon-luci-private-wifi \
 	gluon-next-node \
 	gluon-mesh-vpn-fastd \
 	gluon-radvd \
+	gluon-setup-mode \
 	gluon-status-page \
 	iwinfo \
 	iptables \
@@ -33,7 +37,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 0.0
+DEFAULT_GLUON_RELEASE := c3-2015.08.30.5
 
 
 ##	GLUON_RELEASE
@@ -48,3 +52,5 @@ GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
+
+GLUON_LANGS ?= en de
